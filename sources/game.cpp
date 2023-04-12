@@ -116,6 +116,9 @@ using namespace ariel;
       throw runtime_error("Error 2!!!");
     }
       }
+      else{
+             throw runtime_error("The game end!");
+      }
 
    
       
@@ -398,8 +401,7 @@ if(pl1.cards_turn.size()==0 && pl2.cards_turn.size()==0){
 
     void ariel::Game::printWiner(){
 
-      // int num1 = this->pl1.cards_won.size();
-      // int num2 = this->pl2.cards_won.size();
+      
 
        int num1 = this->pl1.cardesTaken();
        int num2 = this->pl2.cardesTaken();
@@ -416,7 +418,7 @@ if(pl1.cards_turn.size()==0 && pl2.cards_turn.size()==0){
       }
       else{
 
-              throw runtime_error("Equals , Tikoooo");
+        cout << "Ops " << "Equal" << endl << endl;
 
       }
 
